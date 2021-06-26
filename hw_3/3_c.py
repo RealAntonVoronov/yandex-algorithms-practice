@@ -1,0 +1,12 @@
+n, m = [int(x) for x in input().split()]
+a = set([int(input()) for _ in range(n)])
+b = set([int(input()) for _ in range(m)])
+intersect = a.intersection(b)
+print(len(intersect))
+print(*sorted(intersect))
+only_a = a.difference(b)
+print(len(only_a))
+print(*sorted(only_a))
+only_b = b.difference(a)
+print(len(only_b))
+print(*sorted(only_b))
